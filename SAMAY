@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+class time{
+    private:
+    int minutes;
+    int seconds;
+    int hours;
+    public:
+    void displayhours();
+    void displayseconds();
+    void displayminutes();
+    void distotalsec();};
+    void time :: displayhours(){
+    
+    cout<<"\nenter hours:";
+    cin>>hours;
+      }
+   
+    void time:: displayseconds(){
+    
+        cout<<"\n enter seconds:";
+        cin>>seconds;
+        
+    }
+    void time::displayminutes(){
+        
+            cout<<"\n enter minutes:";
+            cin>>minutes;
+            
+        
+    }
+      
+   void time::distotalsec(){
+    
+    cout<<"THE TIME IS:"<<hours<<":"<<minutes<<":"<<seconds;
+    
+    cout<<"\nThe totaltime in secs:"<<((hours*60*60)+(minutes*60)+(seconds));  //Converting whole time into seconds
+        
+    }
+int main() {
+cout<<"PLEASE ENTER TIME IN INDIAN STANDARD TIMINGS:";
+time t1;
+t1.displayhours();
+t1.displayminutes();
+t1.displayseconds();
+t1.distotalsec();
+    return 0;
+}
